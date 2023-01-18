@@ -7,7 +7,7 @@
 body {
     font-family: 'W95FA', sans-serif; 
     background-color: #308887;                      
-    width: 100%;                      
+    max-width: 100%  !important;                    
 }
 
 *::selection {
@@ -69,7 +69,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 7%;
+    width: 20%;
     border: none;
     height: 28px;
     margin: 4px;
@@ -111,15 +111,15 @@ body {
     background-color: #308887;
     display: flex;
     flex-direction: row;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: -70px;
     width: 100%;
     justify-content: center;
 }
 
 .container__icon-mobile {
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,8 +137,8 @@ body {
 
 .img__icon-mobile {
     object-fit: contain;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
 }
 .img__ba {
     display: none;
@@ -146,14 +146,14 @@ body {
 
 .img__ba-mobile {
     object-fit: cover;
-    width: 99px;
-    height: 43px;
-    margin-top: 26px;
+    width: 58px;
+    height: 22px;
+    margin-top: 18px;
 }
 
 .description {
     text-align: center;
-    font-size: 16px;
+    font-size: 11px;
     color: white;
     margin-top: 5px;
     font-weight: normal;
@@ -294,8 +294,7 @@ h5.cd__text {
 }
 
 .paint {
-    width: 550px;
-    height: 700px;
+    width: 90%;
     margin-top: 68px;
 }
 
@@ -305,7 +304,6 @@ h5.cd__text {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
-    width: 90%;
 }
 
 .skills__title-bar-text {
@@ -316,6 +314,7 @@ h5.cd__text {
 .skills__container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -324,7 +323,7 @@ h5.cd__text {
     background: silver;
     box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
     padding: 3px;
-    width: 50%;
+    width: 100%;
     height: 95px;
     margin: 8px 24px;
 }
@@ -381,8 +380,7 @@ h5.cd__text {
     background: silver;
     box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
     padding: 3px;
-    width: 520px;
-    height: 362px;
+    width: 90%;
     margin: 40px 24px;
 }
    
@@ -409,14 +407,14 @@ h5.cd__text {
 .aboutme__container-text {
     display: flex;
     justify-content: center;
-    width: 513px;
+    width: 99%;
  }
 
 .aboutme__h2 {
     text-align: start;
     margin-left: -3px;
     margin-bottom: 7px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 span {
@@ -427,7 +425,7 @@ span {
 .aboutme__text {
     display: flex;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 16px;
     background-color: rgb(255, 255, 255);
     padding: 7px;
     box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
@@ -465,14 +463,82 @@ span {
 }
 
 .footer__img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 
 .footer__text {
     color: white;
-    font-size: 20px;
+    font-size: 11px;
+}
+
+@media (min-width: 768px) {
+    .nav__window {
+        width: 25%;
+    }
+
+    .img__ba-mobile {
+        object-fit: cover;
+        width: 99px;
+        height: 43px;
+        margin-top: 26px;
+    }
+
+    .container__icon-mobile {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .img__icon-mobile {
+        width: 70px;
+        height: 70px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    .paint {
+        width: 550px;
+        height: 700px;
+        margin-top: 68px;
+    }
+
+    .skills {
+        width: 90%;
+    }
+    
+    .skills__bar {
+        width: 50%;
+    }
+    
+    .skills__container { 
+        flex-wrap: nowrap;
+    }
+
+    .aboutme__container {
+        width: 70%; 
+    }
+
+    .aboutme__h2 {
+        font-size: 20px;
+    }
+
+    .aboutme__text {
+         font-size: 20px;
+    }
+
+    .footer__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer__text {
+        color: white;
+        font-size: 20px;
+    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -522,7 +588,7 @@ span {
         display: none;
     }
 
-    .container__icon-mobile {
+    .container__icon-mobile{
         display: none;
     }
 
