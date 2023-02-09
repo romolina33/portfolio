@@ -79,7 +79,12 @@ body {
 }
 
 .nav__window:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.nav__window:active {
+    background-color: black;
+    color: white;
 }
 
 .nav__bar {
@@ -195,7 +200,6 @@ main {
     box-shadow: inset -1px -1px #dfdfdf, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
     padding: 3px;
     width: 90%;
-    height: 61%;
     justify-content: center;
     margin-top: 72px;
 }
@@ -470,7 +474,7 @@ span {
 
 .footer__text {
     color: white;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 @media (min-width: 768px) {
@@ -499,9 +503,12 @@ span {
         font-size: 20px;
     }
 
+    .cd__window {
+        width: 85%;
+    }
+    
     .paint {
-        width: 550px;
-        height: 700px;
+        width: 90%;
         margin-top: 68px;
     }
 
@@ -518,7 +525,7 @@ span {
     }
 
     .aboutme__container {
-        width: 70%; 
+        width: 75%; 
     }
 
     .aboutme__h2 {
@@ -536,7 +543,7 @@ span {
 
     .footer__text {
         color: white;
-        font-size: 20px;
+        font-size: 26px;
     }
     
 }
@@ -573,6 +580,7 @@ span {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
 
     .column {
@@ -655,11 +663,17 @@ span {
     }
 
     .column {
-    margin-top: 0;
+        margin-top: 0;
+        justify-content: space-between;
+    }
+
+    .skills {
+        width: 100%;
     }
   
     .aboutme__container {
-        margin: 75px 24px;
+        margin: 9px 24px;
+        width: 90%;
     }
   
     .footer__text {
