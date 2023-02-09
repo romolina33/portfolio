@@ -40,15 +40,15 @@ body {
 }
 
 .nav__start:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 .nav__start:active {
-  background-color: black;
+    box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
 }
 
 .nav__start-tittle:active {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .nav__logo {
@@ -79,12 +79,11 @@ body {
 }
 
 .nav__window:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .nav__window:active {
-    background-color: black;
-    color: white;
+   box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
 }
 
 .nav__bar {
@@ -95,13 +94,9 @@ body {
 }
 
 .nav__bar:hover {
-    transform: scaleX(1.1);
+    transform: scaleX(1.01);
 }
 
-.nav__bar:active {
-  background-color: black;
-  color: white;
-}
 
 /* Icons */
 .container__icons {
